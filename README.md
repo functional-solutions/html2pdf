@@ -70,13 +70,8 @@ html2pdf ./example.html --format A4 --pageRanges 1 -o example.pdf
 | margin         | string  | Set margin(s) for the PDF document. It can be all four margin or specified by the values separated with space. Default is `0`.      |
 | userAgent      | string  | Set custom user-agent string.                                                                                                       |
 | base64         | boolean | Return the PDF as a base64-encoded string (REST API only). Disabled by default.                                                     |
-| headerTemplate | string  | Set PDF header. HTML template for the print header. Should be valid HTML with the following classes used to inject values into them:
-    * date formatted print date
-    * title document title
-    * url document location
-    * pageNumber current page number
-    * totalPages total pages in the document|
-| footerTemplate | string  | Set PDF header. It |
+| headerTemplate | string  | Set PDF header. HTML template for the print header. Should be valid HTML with the following classes used to inject values into them: <ul><li>date formatted print date</li><li>title document title</li><li>url document location</li> <li>pageNumber current page number</li><li>totalPages total pages in the document</li></ul> |  
+| footerTemplate | string  | Set PDF footer. HTML template for the print header. Should be valid HTML with the following classes used to inject values into them: <ul><li>date formatted print date</li><li>title document title</li><li>url document location</li> <li>pageNumber current page number</li><li>totalPages total pages in the document</li></ul> |
 
 ## Author
 
